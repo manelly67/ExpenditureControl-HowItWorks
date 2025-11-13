@@ -1,0 +1,112 @@
+.light {
+  --color-bg-first: #e3ffc3;
+  --color-base-text: #123102;
+  --color-a-hover: #154674;
+  --color-text-button: #c9ff97;
+  --color-bg-button: #2a5710;
+}
+
+.dark {
+  --color-bg-first: #123102;
+  --color-base-text: #f4ffe6;
+  --color-a-hover: #5eaffc;
+  --color-text-button: #c9ff97;
+  --color-bg-button: #2a5710;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  color: var(--color-base-text);
+  background-color: var(--color-bg-first);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: grid;
+}
+
+@media screen and (max-width: 430px) {
+  .setButtons {
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    gap: 10px;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 431px) {
+  .setButtons {
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+.setButtons > fieldset {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  padding: 0.3rem;
+}
+
+/* toggle button */
+.toggle {
+  border: 0px;
+  width: 40px;
+  height: 40px;
+  font-size: 2rem;
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+.animate1 {
+  animation: opacity 0.7s both;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

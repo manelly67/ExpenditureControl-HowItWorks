@@ -1,15 +1,16 @@
-import _ from 'lodash'; 
-import './style.css';
+import './styles/style-reset.css';
+import './styles/style.css';
+import { googleFonts } from "./components/google-fonts";
+import { homepage } from "./components/homepage";
 
-import printMe from './print.js';
+const meta = document.createElement("meta");
+meta.setAttribute("name", "description");
+meta.setAttribute(
+  "content",
+  "description of the benefits of the app CoffeeTea designed for expense controlling"
+);
 
-function component() {
-    const element = document.createElement('div');
-  
-     // Lodash, now imported by this script   
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  
-    return element;
-  }
-  
-  document.body.appendChild(component());
+googleFonts();
+homepage();
+
+document.head.appendChild(meta);
