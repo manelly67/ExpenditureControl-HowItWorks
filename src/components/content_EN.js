@@ -7,9 +7,17 @@ const content_EN = () => {
   title.textContent =
     "How the web app Coffee or Tea for controlling budget expenses works";
 
+  const firstParr = document.createElement("div");
+  const enlaceInit = document.createElement("a");
+  enlaceInit.setAttribute("href", coffeetea);
+  enlaceInit.setAttribute("target", "_blank");
+  enlaceInit.setAttribute("rel", "noopener noreferrer");
+  enlaceInit.textContent = `${coffeetea}`;
+  content.appendChild(enlaceInit);
+
   const txt1 = document.createElement("p");
   txt1.textContent =
-    "This is a React application designed as a purely client-side application, which means that it runs entirely in the user's browser without requiring a backend server for its core functionality.";
+    "is a React application designed as a purely client-side application, which means that it runs entirely in the user's browser without requiring a backend server for its core functionality.";
 
   const subtitle1 = document.createElement("p");
   subtitle1.className = "subtitle";
@@ -57,7 +65,9 @@ const content_EN = () => {
   ];
 
   content.appendChild(title);
-  content.appendChild(txt1);
+  content.appendChild(firstParr);
+  firstParr.appendChild(enlaceInit);
+  firstParr.appendChild(txt1);
   content.appendChild(subtitle1);
   content.appendChild(txt2);
   content.appendChild(subtitle2);

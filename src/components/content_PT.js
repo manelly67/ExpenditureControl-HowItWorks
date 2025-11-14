@@ -7,9 +7,17 @@ const content_PT = () => {
   title.textContent =
     "Como funciona a aplicação web Café ou Chá para controlo de despesas orçamentais";
 
+  const firstParr = document.createElement("div");
+  const enlaceInit = document.createElement("a");
+  enlaceInit.setAttribute("href", coffeetea);
+  enlaceInit.setAttribute("target", "_blank");
+  enlaceInit.setAttribute("rel", "noopener noreferrer");
+  enlaceInit.textContent = `${coffeetea}`;
+  content.appendChild(enlaceInit);
+
   const txt1 = document.createElement("p");
   txt1.textContent =
-    "Esta é uma aplicação React concebida como uma aplicação puramente do lado do cliente, o que significa que é executada inteiramente no navegador do utilizador, sem necessidade de um servidor backend para a sua funcionalidade principal.";
+    "é uma aplicação React concebida como uma aplicação puramente do lado do cliente, o que significa que é executada inteiramente no navegador do utilizador, sem necessidade de um servidor backend para a sua funcionalidade principal.";
 
   const subtitle1 = document.createElement("p");
   subtitle1.className = "subtitle";
@@ -57,7 +65,9 @@ const content_PT = () => {
   ];
 
   content.appendChild(title);
-  content.appendChild(txt1);
+  content.appendChild(firstParr);
+  firstParr.appendChild(enlaceInit);
+  firstParr.appendChild(txt1);
   content.appendChild(subtitle1);
   content.appendChild(txt2);
   content.appendChild(subtitle2);
@@ -76,7 +86,7 @@ const content_PT = () => {
   });
 
   const enlace = document.createElement("a");
-  enlace.className ="locateEnlace";
+  enlace.className = "locateEnlace";
   enlace.setAttribute("href", coffeetea);
   enlace.setAttribute("target", "_blank");
   enlace.setAttribute("rel", "noopener noreferrer");
@@ -110,7 +120,6 @@ const content_PT = () => {
   subtitle3.textContent = "Destaques do design";
   content.appendChild(subtitle3);
 
-
   tools.forEach((e) => {
     const span = document.createElement("span");
     span.textContent = "\u25E6";
@@ -125,34 +134,34 @@ const content_PT = () => {
   });
 
   const enlace2 = document.createElement("a");
-  enlace2.className ="locateEnlace";
+  enlace2.className = "locateEnlace";
   enlace2.setAttribute("href", coffeetea);
   enlace2.setAttribute("target", "_blank");
   enlace2.setAttribute("rel", "noopener noreferrer");
   enlace2.textContent = `teste aqui ${coffeetea} `;
   content.appendChild(enlace2);
 
-   const footer = document.createElement("footer");
-    const mn_logo = new Image();
-    mn_logo.src = logo;
-    const img = document.createElement("img");
-    img.setAttribute("src", mn_logo.src);
-    img.setAttribute("alt", "maria nelly lopez logo");
-    img.setAttribute("width", "30px");
-    img.setAttribute("height", "30px");
-    const copy = document.createElement("p");
-    copy.textContent = "\u00A9 2025 marianellylopez";
-  
-    const contactme = document.createElement("a");
-    contactme.setAttribute("href", mnl_portfolio);
-    contactme.setAttribute("target", "_blank");
-    contactme.setAttribute("rel", "noopener noreferrer");
-    contactme.textContent = "Contact Me for Developer Stuff";
-  
-    content.appendChild(footer);
-    footer.appendChild(img);
-    footer.appendChild(copy);
-    footer.appendChild(contactme);
+  const footer = document.createElement("footer");
+  const mn_logo = new Image();
+  mn_logo.src = logo;
+  const img = document.createElement("img");
+  img.setAttribute("src", mn_logo.src);
+  img.setAttribute("alt", "maria nelly lopez logo");
+  img.setAttribute("width", "30px");
+  img.setAttribute("height", "30px");
+  const copy = document.createElement("p");
+  copy.textContent = "\u00A9 2025 marianellylopez";
+
+  const contactme = document.createElement("a");
+  contactme.setAttribute("href", mnl_portfolio);
+  contactme.setAttribute("target", "_blank");
+  contactme.setAttribute("rel", "noopener noreferrer");
+  contactme.textContent = "Contact Me for Developer Stuff";
+
+  content.appendChild(footer);
+  footer.appendChild(img);
+  footer.appendChild(copy);
+  footer.appendChild(contactme);
 
   return content;
 };

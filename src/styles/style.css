@@ -44,10 +44,12 @@ p {
 
 a {
   color: var(--color-a-hover);
+  align-self: center;
 }
 
 .locateEnlace {
-  width: 80%;
+  min-width: 300px;
+  width: 50%;
   text-align: right;
 }
 
