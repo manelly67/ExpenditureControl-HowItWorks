@@ -50,6 +50,7 @@ const content_EN = () => {
     "Save and export it.",
     "Use it in Excel or Drive spreadsheets, or simply keep it or transfer it.",
     "Add expense data without altering the file structure and do not change the date format",
+    `The aspects to consider are: the date format must be "yyyy-MM-dd", the separator in numbers with decimals must be a period (.), and the CSV file must use a comma (,) as the separator. Files that use a semicolon as the separator will be rejected.`,
     "This way, you can import it back into the website to continue editing or simply view it.",
     "The imported file will overwrite the previous file, subject to user confirmation.",
   ];

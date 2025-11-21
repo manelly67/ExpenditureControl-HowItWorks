@@ -50,6 +50,7 @@ const content_PT = () => {
     "Guarde e exporte.",
     "Utilize no Excel ou em folhas de cálculo do Drive. Ou simplesmente guarde-o ou transfira-o.",
     "Adicione dados de despesas sem alterar a estrutura do ficheiro e não altere o formato da data.",
+    "Os aspetos a considerar são: o formato da data deve ser «aaaa-MM-dd», o separador em números com decimais deve ser um ponto (.), e o ficheiro CSV deve usar uma vírgula (,) como separador. Os ficheiros que usam um ponto e vírgula como separador serão rejeitados.",
     "Dessa forma, pode importá-lo novamente para a página web para continuar a modificá-lo ou simplesmente visualizá-lo.",
     "O ficheiro importado irá reescrever o ficheiro anterior, após confirmação do utilizador.",
   ];

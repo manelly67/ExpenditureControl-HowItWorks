@@ -50,6 +50,7 @@ const content_ES = () => {
     "Guárdelo y expórtelo.",
     "Utilícelo en hojas de cálculo de Excel o Drive, o simplemente guárdelo o transfieralo.",
     "Añada datos de gastos sin alterar la estructura del archivo y no cambie el formato de fecha.",
+    `Los aspectos a tener en cuenta son: el formato de fecha debe ser «aaaa-MM-dd», el separador en números con decimales debe ser un punto (.), y el archivo CSV debe utilizar una coma (,) como separador. Los archivos que utilicen un punto y coma como separador serán rechazados.`,
     "De esta manera, puede importarlo de nuevo al sitio web para continuar editándolo o simplemente verlo.",
     "El archivo importado sobrescribirá el archivo anterior, sujeto a la confirmación del usuario.",
   ];
