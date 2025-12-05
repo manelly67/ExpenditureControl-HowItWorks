@@ -23,6 +23,10 @@ module.exports = {
   optimization: {
     runtimeChunk: 'single',
   },
+  cache: {
+    type: 'filesystem',
+    idleTimeout: 60000,
+  },
   module: {
     rules: [
       {
